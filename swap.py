@@ -1,18 +1,18 @@
+# swap.py
 
-def swap_numbers():
-    print("Number Swapper")
-    print("--------------")
-    
-    # Get input from the user
-    a = input("Enter the first number: ")
-    b = input("Enter the second number: ")
+# Hardcoded values
+a = 5
+b = 10
 
-    print(f"\nBefore swapping: a = {a}, b = {b}")
+print("Before swapping:")
+print("a =", a)
+print("b =", b)
 
-    # Swap the values
-    a, b = b, a
+# Swap logic
+temp = a
+a = b
+b = temp
 
-    print(f"After swapping: a = {a}, b = {b}")
-
-if __name__ == "__main__":
-    swap_numbers()
+print("\nAfter swapping:")
+print("a =", a)
+print("b =", b)
